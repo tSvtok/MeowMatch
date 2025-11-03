@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liked Cats 🐾</title>
+  <link rel="stylesheet" href="meow.css" />
+</head>
+<body>
+  <h1>❤️ Your Liked Cats</h1>
+  <div id="likedCats" class="liked-container"></div>
+
+  <div class="nav">
+    <a id="backmatch" href="meow.html">Back to Matching</a>
+  </div>
+
+  <script>
+    const container = document.getElementById('likedCats');
+    const liked = JSON.parse(localStorage.getItem('likedpaw')) || [];
+
+    if (liked.length === 0) {
+      container.innerHTML = "<p>No liked cats yet :(</p>";
+    } else {
+      liked.forEach(cat => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${cat.image}" alt="${cat.name}">
+          <h2>${cat.name}</h2>
+        `;
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

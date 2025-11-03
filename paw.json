@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Noha",
+    "image": "./image/noha.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bilal",
+    "image": "./image/bilal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Badr",
+    "image": "./image/badr.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Brahim",
+    "image": "./image/brahim.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lamiae",
+    "image": "./image/lamiae.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Reda",
+    "image": "./image/reda.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Razan",
+    "image": "./image/razan.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Taha",
+    "image": "./image/taha.jpg"
+  }
+]

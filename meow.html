@@ -1,25 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeowMatch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeowMatch 🐾</title>
+  <link rel="stylesheet" href="meow.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
 </head>
 <body>
-    <div class="cnt">
-        <div class="home_page">
-            <img src="" alt="">
-            <h1>MeowMatch</h1>
-            <p>Are You ready To Rate Some Pawsome Cats ^،^</p>
-            <button id="start"> START=></button>
-        </div>
-        <div class="match_page">
-            
-            
-        </div>
-
+  <!-- Home Page -->
+  <section id="home">
+    <img id="logoimg" src="./image/logo.png" alt="">
+    <h1 class="logo">🐾 MeowMatch</h1>
+    <button id="startBtn">Start Matching</button>
+    <div class="nav">
+      <a id="liked" href="liked.html">❤️ View Liked Cats</a>
     </div>
-    
+  </section>
 
-    
+  <!-- Match Page -->
+  <section id="match" class="hidden">
+    <div id="catCard" class="card"></div>
+    <div class="buttons">
+      <button id="dislikeBtn">❌ Dislike</button>
+      <button id="likeBtn">❤️ Like</button>
+    </div>
+  </section>
+  
+
+  <script src="meow.js"></script>
 </body>
 </html>
